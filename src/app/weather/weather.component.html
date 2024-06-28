@@ -1,0 +1,31 @@
+<div class="weather-app">
+    <div class="header">
+      <div class="title-bar">
+        <h1>Simple Weather</h1>
+        <img src="assets/search-icon.png" alt="Search Icon" class="search-icon" (click)="toggleSearch()">
+      </div>
+      <div class="locations">
+        <span *ngFor="let city of cities" 
+              [class.active]="isActive(city)"
+              (click)="selectCity(city)">
+          {{ city.toUpperCase() }}
+        </span>
+      </div>
+      <div class="search-container" *ngIf="searchVisible">
+        <input [(ngModel)]="searchQuery" placeholder="Search for a city">
+        <button (click)="searchCity()">Search</button>
+      </div>
+    </div>
+    <div class="forecast">
+      <div class="hourly">
+        <h2>Next hours</h2>
+        <app-hourly-forecast [data]="hourlyData"></app-hourly-forecast>
+      </div>
+      <div class="daily">
+        <h2>Next 5 days</h2>
+        <app-daily-forecast [data]="dailyData"></app-daily-forecast>
+      </div>
+      <button (click)="refreshData()">Refresh</button>
+    </div>
+  </div>
+  

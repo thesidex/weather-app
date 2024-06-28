@@ -1,0 +1,134 @@
+.weather-app {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  .header {
+    background-color: #1976d2;
+    padding: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .title-bar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .title-bar h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .search-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  
+  .locations {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: white;
+    padding: 10px 0;
+    margin-top: 10px;
+  }
+  
+  .locations span {
+    cursor: pointer;
+    color: #555;
+  }
+  
+  .locations .active {
+    font-weight: bold;
+    color: black;
+    border-bottom: 2px solid #1976d2;
+  }
+  
+  .search-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  .search-container input {
+    padding: 5px;
+    margin-right: 10px;
+    flex-grow: 1;
+  }
+  
+  .search-container button {
+    padding: 5px;
+  }
+  
+  .forecast {
+    margin-top: 20px;
+  }
+  
+  .hourly-forecast {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .hour {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  
+  .hour-container {
+    display: flex;
+  }
+  
+  .hour {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 80px;
+    border-right: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .hour:last-child {
+    border-right: none;
+  }
+  
+  .temp {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .precip {
+    color: #00bcd4;
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .time {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,49 @@
+.hourly-forecast {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hour-container {
+    display: flex;
+  }
+  
+  .hour {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 80px;
+    border-right: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .hour:last-child {
+    border-right: none;
+  }
+  
+  .temp {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .precip {
+    color: #00bcd4;
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .time {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #555;
+  }
+  
